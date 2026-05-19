@@ -1,0 +1,9 @@
+{
+  "name": "FamilyFlix",
+  "description": "A private family streaming platform for home movies, travel videos, and photo albums.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

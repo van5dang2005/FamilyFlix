@@ -1,0 +1,15 @@
+import { Navigate, Outlet } from 'react-router-dom'
+import { useAuth } from '../hooks/useAuth'
+
+const GuestRoute = () => {
+  const { isAuthenticated } = useAuth()
+
+  // Đã login → không cho vào login/register
+  if (isAuthenticated) {
+    return <Navigate to="/home" replace />
+  }
+
+  return <Outlet />
+}
+
+export default GuestRoute
